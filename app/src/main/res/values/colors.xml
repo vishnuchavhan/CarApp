@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="BackgroundColor">#151819</color>
+    <color name="BackgroundColor1">#141617</color>
+    <color name="PrimaryColor">#424242</color>
+    <color name="HighlightColor">#faf0f1</color>
+    <color name="FontColor">#FFF3E0</color>
+    <color name="ExtraFontColor">#B00020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#ff0f18</color>
+    <color name="blue">#03A9F4</color>
+</resources>

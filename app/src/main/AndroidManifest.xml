@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.carrental">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="@string/app_name"
+        android:icon="@drawable/car_logo"
+        android:roundIcon="@drawable/car_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".AdminActivities.DisplayRentedCarsActivity"></activity>
+        <activity android:name=".UserAuthentication.ForgetPasswordActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".AdminUserMessages.AdminResponsesActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity android:name=".AdminUserMessages.CustomerMessagesActivity" />
+        <activity
+            android:name=".UserFragments.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminActivities.AddAdminActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity
+            android:name=".AdminActivities.RemoveCarsActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity
+            android:name=".AdminActivities.UpdateCarActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity
+            android:name=".AdminActivities.DisplayCarsActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity
+            android:name=".AdminActivities.AddCarActivity"
+            android:parentActivityName=".AdminActivities.AdminActivity" />
+        <activity android:name=".AdminActivities.AdminActivity" />
+        <activity android:name=".UserAuthentication.SignupActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name=".UserAuthentication.LoginActivity"
+            android:theme="@style/LoginTheme"/>
+        <activity
+            android:name=".UserAuthentication.SplashActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

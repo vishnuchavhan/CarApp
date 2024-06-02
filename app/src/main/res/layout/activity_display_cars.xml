@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminActivities.DisplayCarsActivity">
+
+    <TextView
+        android:id="@+id/text_view_exhibition_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:text="@string/cars_available"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/one_rounded_corner"
+        android:textColor="@color/white"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.06"
+        android:textSize="19sp"
+        android:elevation="4dp"/>
+
+    <ListView
+        android:id="@+id/list_view_users_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_exhibition_title"
+        android:layout_centerHorizontal="true"
+        android:divider="@null"/>
+
+</RelativeLayout>
